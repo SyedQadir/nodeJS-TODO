@@ -16,6 +16,7 @@ if(process.env.RIAK_NODES) {
   async = require('async');
   Riak = require('basho-riak-client');
 }
+app.use(express.bodyParser());
 
 
 var dbType = getDbType();
